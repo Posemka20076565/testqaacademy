@@ -146,7 +146,7 @@ public class Mainclass {
         int[][] massivMassiv4 = new int[5][5];
         WorkWithMAssive workWithMAssive3 = new WorkWithMAssive();
         workWithMAssive.makeDiagonal2(massivMassiv4);
-
+////////////////////////////
         kaza.exchangeCurrencyToGrn(100);
         kaza.exchangeCurrencyToGrn(400);
         System.out.println(kaza.exchangeCurrencyToGrn(1));
@@ -155,9 +155,5 @@ public class Mainclass {
         System.out.println(dollar.getCurrencyName());
         bitcoin.setMarga(-0.4);
         System.out.println(bitcoin.getMarga());
-        Logger loger = Logger.getLogger(Mainclass.class);
-        loger.info("Teat info");
-        loger.debug("test debug");
-        loger.error("test error");
     }
 }
