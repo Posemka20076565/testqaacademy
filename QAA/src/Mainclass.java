@@ -127,7 +127,36 @@ public class Mainclass {
         for (HashMap elementOfMap : ourListmap
         ) {
             System.out.println(elementOfMap);
-        }/**oijcfenhcefhncfehnnhfcehnuifcernhufercbhnudefbhncnhefcuhnuefrcncerfnjercfhncefrjnefbnjecf*/
+        }/**oijcfenhcefhncfehnnhfcehnuifcernhufercрщгиумакрштгсурташрщтгсвышорвсышосвысвыфшощсвыфшсвыфш
+         э
+
+
+
+         ма
+         фсв
+         свф
+         всыф
+         фсв
+
+         фсв
+         свыф
+         вс
+         фвсы
+         всы
+         фсвы
+
+         сфы
+         сфвы
+         вс
+         фвыс
+         фсыв
+
+         фвс
+         вфс
+         выфс
+         фаы
+         в
+         ипкаbhnudefbhncnhefcuhnuefrcncerfnjercfhncefrjnefbnjecf*/
         Dollar dollar = new Dollar(28);
         System.out.println(dollar.getKursNBU());
         dollar.setKursNBU(28.55);
@@ -155,5 +184,13 @@ public class Mainclass {
         System.out.println(dollar.getCurrencyName());
         bitcoin.setMarga(-0.4);
         System.out.println(bitcoin.getMarga());
+
+
+
+
+
+
+
+
     }
 }
