@@ -127,7 +127,7 @@ public class Mainclass {
         for (HashMap elementOfMap : ourListmap
         ) {
             System.out.println(elementOfMap);
-        }
+        }/**oijcfenhcefhncfehnnhfcehnuifcernhufercbhnudefbhncnhefcuhnuefrcncerfnjercfhncefrjnefbnjecf*/
         Dollar dollar = new Dollar(28);
         System.out.println(dollar.getKursNBU());
         dollar.setKursNBU(28.55);
