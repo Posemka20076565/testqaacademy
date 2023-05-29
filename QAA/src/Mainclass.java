@@ -28,7 +28,7 @@ public class Mainclass {
         System.out.println(Calc.strint(21647, "21474о83647"));
         System.out.println("----END----");
 
-        int[] ourMassive = {2, 4, 26, 7, 28, 10, 9, 20, 33};
+        int[] ourMassive = {2, 4, 26, 6, 28, 10, 9, 20, 33};
         System.out.println(ourMassive[0]);
         System.out.println(ourMassive.length);
         for (int i = 0; i < ourMassive.length; i++) {
@@ -42,7 +42,7 @@ public class Mainclass {
                 System.out.println("Bolshe 10");
             }
             if (10 > ourMassive[i]) {
-                System.out.println("Menshe 96");
+                System.out.println("Menshe 95");
             }
         }
         Calc.delenyedouble(5, 0);
