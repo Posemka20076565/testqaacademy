@@ -5,13 +5,11 @@ import Currency.Dollar;
 import Currency.euro;
 import libs.Calc;
 import libs.WorkWithMAssive;
-import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 public class Mainclass {
     public static void main(String[] arg) {
         System.out.println("Hello AQA world!");
@@ -30,7 +28,7 @@ public class Mainclass {
         System.out.println(Calc.strint(21647, "21474о83647"));
         System.out.println("----END----");
 
-        int[] ourMassive = {2, 4, 26, 7, 28, 10, 9, 20, 33};
+        int[] ourMassive = {2, 4, 288, 6, 28, 10, 9, 20, 33};
         System.out.println(ourMassive[0]);
         System.out.println(ourMassive.length);
         for (int i = 0; i < ourMassive.length; i++) {
@@ -44,7 +42,7 @@ public class Mainclass {
                 System.out.println("Bolshe 10");
             }
             if (10 > ourMassive[i]) {
-                System.out.println("Menshe 10");
+                System.out.println("Menshe 95");
             }
         }
         Calc.delenyedouble(5, 0);
@@ -127,36 +125,7 @@ public class Mainclass {
         for (HashMap elementOfMap : ourListmap
         ) {
             System.out.println(elementOfMap);
-        }/**oijcfenhcefhncfehnnhfcehnuifcernhufercрщгиумакрштгсурташрщтгсвышорвсышосвысвыфшощсвыфшсвыфш
-         э
-
-
-
-         ма
-         фсв
-         свф
-         всыф
-         фсв
-
-         фсв
-         свыф
-         вс
-         фвсы
-         всы
-         фсвы
-
-         сфы
-         сфвы
-         вс
-         фвыс
-         фсыв
-
-         фвс
-         вфс
-         выфс
-         фаы
-         в
-         ипкаbhnudefbhncnhefcuhnuefrcncerfnjercfhncefrjnefbnjecf*/
+        }
         Dollar dollar = new Dollar(28);
         System.out.println(dollar.getKursNBU());
         dollar.setKursNBU(28.55);
@@ -175,7 +144,6 @@ public class Mainclass {
         int[][] massivMassiv4 = new int[5][5];
         WorkWithMAssive workWithMAssive3 = new WorkWithMAssive();
         workWithMAssive.makeDiagonal2(massivMassiv4);
-////////////////////////////
         kaza.exchangeCurrencyToGrn(100);
         kaza.exchangeCurrencyToGrn(400);
         System.out.println(kaza.exchangeCurrencyToGrn(1));
@@ -184,13 +152,5 @@ public class Mainclass {
         System.out.println(dollar.getCurrencyName());
         bitcoin.setMarga(-0.4);
         System.out.println(bitcoin.getMarga());
-
-
-
-
-
-
-
-
     }
 }
