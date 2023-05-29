@@ -42,7 +42,7 @@ public class Mainclass {
                 System.out.println("Bolshe 10");
             }
             if (10 > ourMassive[i]) {
-                System.out.println("Menshe 95");
+                System.out.println("Menshe 96");
             }
         }
         Calc.delenyedouble(5, 0);
