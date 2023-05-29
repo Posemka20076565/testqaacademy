@@ -5,13 +5,11 @@ import Currency.Dollar;
 import Currency.euro;
 import libs.Calc;
 import libs.WorkWithMAssive;
-import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 public class Mainclass {
     public static void main(String[] arg) {
         System.out.println("Hello AQA world!");
@@ -30,7 +28,7 @@ public class Mainclass {
         System.out.println(Calc.strint(21647, "21474о83647"));
         System.out.println("----END----");
 
-        int[] ourMassive = {2, 4, 26, 7, 28, 10, 9, 20, 33};
+        int[] ourMassive = {2, 4, 288, 6, 28, 10, 9, 20, 33};
         System.out.println(ourMassive[0]);
         System.out.println(ourMassive.length);
         for (int i = 0; i < ourMassive.length; i++) {
@@ -44,7 +42,7 @@ public class Mainclass {
                 System.out.println("Bolshe 10");
             }
             if (10 > ourMassive[i]) {
-                System.out.println("Menshe 10");
+                System.out.println("Menshe 95");
             }
         }
         Calc.delenyedouble(5, 0);
@@ -155,9 +153,5 @@ public class Mainclass {
         System.out.println(dollar.getCurrencyName());
         bitcoin.setMarga(-0.4);
         System.out.println(bitcoin.getMarga());
-        Logger loger = Logger.getLogger(Mainclass.class);
-        loger.info("Teat info");
-        loger.debug("test debug");
-        loger.error("test error");
     }
 }
