@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 public class Mainclass {
     public static void main(String[] arg {
-        System.out.println("Hello AQA world!");
+
         int var1, var2, lala1, lsklkad2;
         var1 = 1;
         var2 = 2;
