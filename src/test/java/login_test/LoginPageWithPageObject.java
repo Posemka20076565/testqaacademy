@@ -4,8 +4,8 @@ import org.junit.Test;
 import parentTest.ParentTest;
 
 public class LoginPageWithPageObject extends ParentTest {
-    @Test
-    public void validLogin{
-
-    }
+//    @Test
+//    public void validLogin{
+//
+//    }
 }
