@@ -74,5 +74,11 @@ public class LoginPage extends ParentPage{
         }
     }
 
-
+    public void loginWithCred(String login, String password){
+        openPage();
+        openLoginMenu();
+        enterTextIntoInputLogin(login);
+        enterTextIntoInputPassword(password);
+        clickOnButtonLogin();
+    }
 }
