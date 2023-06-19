@@ -6,8 +6,11 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.StorePage;
+import pages.SupporterTagPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,6 +18,8 @@ public class ParentTest {
     protected WebDriver webDriver;
     protected LoginPage loginPage;
     protected HomePage homePage;
+    protected StorePage storePage;
+    protected SupporterTagPage supporterTagPage;
     @Before
     public void setUp(){
         ChromeOptions options = new ChromeOptions();
@@ -26,6 +31,8 @@ public class ParentTest {
 
         loginPage = new LoginPage(webDriver);
         homePage = new HomePage(webDriver);
+        storePage = new StorePage(webDriver);
+        supporterTagPage = new SupporterTagPage(webDriver);
     }
     @After
     public void tearDown(){

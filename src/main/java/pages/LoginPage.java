@@ -14,7 +14,7 @@ public class LoginPage extends ParentPage{
     @FindBy(xpath = ".//input[@class='login-box__form-input js-login-form-input js-nav2--autofocus']")
     private WebElement inputLoginRow;
 
-    @FindBy(xpath =".//input[@class='login-box__form-input js-login-form-input js-nav2--autofocus']")
+    @FindBy(xpath =".//input[@class='login-box__form-input js-login-form-input']")
     private WebElement inputPasswordRow;
 
     @FindBy(xpath = ".//a[@class='landing-nav__link js-nav-toggle js-click-menu js-user-login--menu']")
@@ -46,7 +46,7 @@ public class LoginPage extends ParentPage{
     }
 
     public void enterTextIntoInputLogin(String login){
-        actionsWithOurElements.enterTextIntoInput(inputLoginRow, "Artist_9");
+        actionsWithOurElements.enterTextIntoInput(inputLoginRow, login);
     }
 
     public void enterTextIntoInputPassword(String password){
@@ -60,7 +60,7 @@ public class LoginPage extends ParentPage{
 //            logger.error("Can not work with element");
 //            Assert.fail("Can not work with element");
 //        }
-        actionsWithOurElements.enterTextIntoInput(inputPasswordRow, "!osu123osu");
+        actionsWithOurElements.enterTextIntoInput(inputPasswordRow, password);
     }
 
     public void clickOnButtonLogin(){
@@ -80,5 +80,9 @@ public class LoginPage extends ParentPage{
         enterTextIntoInputLogin(login);
         enterTextIntoInputPassword(password);
         clickOnButtonLogin();
+    }
+
+    public void validLogin() {
+        loginWithCred("Artist_9", "!osu123osu");
     }
 }
