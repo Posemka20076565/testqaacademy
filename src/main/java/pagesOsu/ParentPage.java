@@ -1,8 +1,7 @@
-package pages;
+package pagesOsu;
 
 import libs.ActionsWithOurElements;
 import org.apache.log4j.Logger;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;

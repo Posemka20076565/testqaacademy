@@ -1,10 +1,11 @@
-package pages;
+package pagesOsu;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class LoginPage extends ParentPage{
@@ -22,6 +23,10 @@ public class LoginPage extends ParentPage{
 
     @FindBy(xpath = ".//button[@class='btn-osu-big btn-osu-big--nav-popup js-captcha--submit-button']")
     private WebElement loginButton;
+    @FindBy(xpath = ".//button[@data-click-menu-target='nav2-locale-popup']")
+    private WebElement languageButton;
+    @FindBy(xpath = ".//span[@class='nav2-locale-item']//div[contains(@style,'1f1ec-1f1e7.svg' )]")
+    private WebElement englishLanguageButton;
 
 
     public void openPage(){
@@ -80,6 +85,12 @@ public class LoginPage extends ParentPage{
         enterTextIntoInputLogin(login);
         enterTextIntoInputPassword(password);
         clickOnButtonLogin();
+    }
+
+    public void changeLanguageToEnglish(){
+        webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        languageButton.click();
+        englishLanguageButton.click();
     }
 
     public void validLogin() {

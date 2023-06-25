@@ -6,11 +6,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.StorePage;
-import pages.SupporterTagPage;
+import pagesOsu.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,6 +16,8 @@ public class ParentTest {
     protected HomePage homePage;
     protected StorePage storePage;
     protected SupporterTagPage supporterTagPage;
+    protected CartPage cartPage;
+    protected BeatmapsPage beatmapsPage;
     @Before
     public void setUp(){
         ChromeOptions options = new ChromeOptions();
@@ -33,6 +31,8 @@ public class ParentTest {
         homePage = new HomePage(webDriver);
         storePage = new StorePage(webDriver);
         supporterTagPage = new SupporterTagPage(webDriver);
+        cartPage = new CartPage(webDriver);
+        beatmapsPage = new BeatmapsPage(webDriver);
     }
     @After
     public void tearDown(){
