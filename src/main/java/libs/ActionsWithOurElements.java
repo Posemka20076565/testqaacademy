@@ -29,4 +29,12 @@ public class ActionsWithOurElements {
         element1.click();
     }
 
+    public boolean isElementPresent(WebElement element){
+        try{
+            return element.isDisplayed();
+        }catch (Exception e){
+            return false;
+        }
+
+    }
 }
