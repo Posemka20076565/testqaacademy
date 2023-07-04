@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ParentTest {
     protected WebDriver webDriver;
-//    protected LoginPage loginPage;
+    //    protected LoginPage loginPage;
 //    protected HomePage homePage;
 //    protected StorePage storePage;
 //    protected SupporterTagPage supporterTagPage;
@@ -22,8 +22,9 @@ public class ParentTest {
     protected LoginPageSwag loginPageSwag;
     protected ItemsPageSwag itemsPageSwag;
     protected CartPageSwag cartPageSwag;
+
     @Before
-    public void setUp(){
+    public void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         webDriver = new ChromeDriver(options);
@@ -41,12 +42,13 @@ public class ParentTest {
         itemsPageSwag = new ItemsPageSwag(webDriver);
         cartPageSwag = new CartPageSwag(webDriver);
     }
-//    @After
-    public void tearDown(){
+
+    //    @After
+    public void tearDown() {
         webDriver.quit();
     }
 
-    public void checkExpectedResult(String message, boolean expectedResult, boolean actualResult){
+    public void checkExpectedResult(String message, boolean expectedResult, boolean actualResult) {
         Assert.assertEquals(message, expectedResult, actualResult);
     }
 //
