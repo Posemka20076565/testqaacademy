@@ -13,7 +13,7 @@ public class LoginPageSwag extends ParentPageSwag {
     @FindBy(xpath = ".//input[@id='login-button']")
     private WebElement loginButton;
     public LoginPageSwag(WebDriver webDriver) {
-        super(webDriver);
+        super(webDriver, "/");
     }
 
     public void openLoginPage(){
