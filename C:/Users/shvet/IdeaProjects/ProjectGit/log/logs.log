@@ -1,0 +1,42 @@
+2023-07-07 11:14:49 INFO  LoginPageSwag:22 - Login page was opened
+2023-07-07 11:14:51 INFO  ActionsWithOurElements:21 - standard_user was inputted into input
+2023-07-07 11:14:51 INFO  LoginPageSwag:31 - Login text was inputted
+2023-07-07 11:14:51 INFO  ActionsWithOurElements:21 - secret_sauce was inputted into input
+2023-07-07 11:14:51 INFO  LoginPageSwag:36 - Password text was inputted
+2023-07-07 11:14:55 INFO  ItemsPageSwag:20 - Button add backpack to cart was clicked
+2023-07-07 11:14:55 INFO  ItemsPageSwag:25 - button open cart was clicked
+2023-07-07 11:15:18 INFO  LoginPageSwag:22 - Login page was opened
+2023-07-07 11:15:20 INFO  ActionsWithOurElements:21 - standard_user was inputted into input
+2023-07-07 11:15:20 INFO  LoginPageSwag:31 - Login text was inputted
+2023-07-07 11:15:20 INFO  ActionsWithOurElements:21 - secret_sauce was inputted into input
+2023-07-07 11:15:20 INFO  LoginPageSwag:36 - Password text was inputted
+2023-07-07 11:15:23 INFO  ItemsPageSwag:20 - Button add backpack to cart was clicked
+2023-07-07 11:15:24 INFO  ItemsPageSwag:25 - button open cart was clicked
+2023-07-07 19:03:36 INFO  LoginPageSwag:22 - Login page was opened
+2023-07-07 19:03:38 INFO  ActionsWithOurElements:21 - standard_user was inputted into input
+2023-07-07 19:03:38 INFO  LoginPageSwag:31 - Login text was inputted
+2023-07-07 19:03:38 INFO  ActionsWithOurElements:21 - secret_sauce was inputted into input
+2023-07-07 19:03:38 INFO  LoginPageSwag:36 - Password text was inputted
+2023-07-07 19:03:41 INFO  ItemsPageSwag:20 - Button add backpack to cart was clicked
+2023-07-07 19:03:42 INFO  ItemsPageSwag:25 - button open cart was clicked
+2023-07-07 19:19:46 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:22:02 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:23:24 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:24:19 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:25:06 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:25:53 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:27:19 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:30:28 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:30:30 INFO  ActionsWithOurElements:21 - standard_user was inputted into input
+2023-07-07 19:30:30 INFO  LoginPageSwag:32 - Login text was inputted
+2023-07-07 19:30:30 INFO  ActionsWithOurElements:21 - secret_sauce was inputted into input
+2023-07-07 19:30:30 INFO  LoginPageSwag:37 - Password text was inputted
+2023-07-07 19:30:34 INFO  ItemsPageSwag:20 - Button add backpack to cart was clicked
+2023-07-07 19:30:34 INFO  ItemsPageSwag:25 - button open cart was clicked
+2023-07-07 19:32:07 INFO  LoginPageSwag:23 - Login page was opened
+2023-07-07 19:32:09 INFO  ActionsWithOurElements:21 - standard_user was inputted into input
+2023-07-07 19:32:09 INFO  LoginPageSwag:32 - Login text was inputted
+2023-07-07 19:32:09 INFO  ActionsWithOurElements:21 - secret_sauce was inputted into input
+2023-07-07 19:32:09 INFO  LoginPageSwag:37 - Password text was inputted
+2023-07-07 19:32:13 INFO  ItemsPageSwag:21 - Button add backpack to cart was clicked
+2023-07-07 19:32:13 INFO  ItemsPageSwag:27 - button open cart was clicked
