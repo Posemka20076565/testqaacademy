@@ -3,7 +3,7 @@ package spares;
 import org.junit.Test;
 import parentTest.ParentTest;
 
-public class AddNewItemToStore extends ParentTest {
+//public class AddNewItemToStore extends ParentTest {
 
 //    @Test
 //    public void addSupporterSubscriptionToCart(){ //invalid because of email approval
@@ -25,4 +25,4 @@ public class AddNewItemToStore extends ParentTest {
 //        beatmapsPage.searchForSongTheHills();
 //        beatmapsPage.favouriteSongTheHills();
 //    }
-}
+//}

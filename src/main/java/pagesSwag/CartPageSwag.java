@@ -9,7 +9,7 @@ public class CartPageSwag extends ParentPageSwag {
     private WebElement backpackInCart;
 
     public CartPageSwag(WebDriver webDriver) {
-        super(webDriver);
+        super(webDriver, "/cart.html");
     }
 
     public boolean checkItemBackpack() {

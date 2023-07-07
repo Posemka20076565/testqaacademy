@@ -12,15 +12,17 @@ public class ItemsPageSwag extends ParentPageSwag{
     private WebElement cartButton;
 
     public ItemsPageSwag(WebDriver webDriver) {
-        super(webDriver);
+        super(webDriver, "/inventory.html");
     }
 
     public void addBackpackToCart(){
+        checkCurrentUrl();
         actionsWithOurElements.clickOnElement(cartBackpack);
         logger.info("Button add backpack to cart was clicked");
     }
 
     public void openCart(){
+        checkCurrentUrl();
         actionsWithOurElements.clickOnElement(cartButton);
         logger.info("button open cart was clicked");
     }

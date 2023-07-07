@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pagesOsu.HomePage;
 
 public class LoginPageSwag extends ParentPageSwag {
     @FindBy(xpath = ".//input[@id='user-name']")
@@ -13,12 +14,12 @@ public class LoginPageSwag extends ParentPageSwag {
     @FindBy(xpath = ".//input[@id='login-button']")
     private WebElement loginButton;
     public LoginPageSwag(WebDriver webDriver) {
-        super(webDriver);
+        super(webDriver, "/");
     }
 
     public void openLoginPage(){
         try{
-            webDriver.get("https://www.saucedemo.com/");
+            webDriver.get("https://www.saucedemo.com");
             logger.info("Login page was opened");
         } catch (Exception e){
             logger.error("LoginPage wasn't opened");
@@ -38,6 +39,7 @@ public class LoginPageSwag extends ParentPageSwag {
 
     public void loginWithCred(String login, String password){
         openLoginPage();
+        checkCurrentUrl();
         inputTextIntoLogin(login);
         inputTextIntoPassword(password);
         loginButton.click();
