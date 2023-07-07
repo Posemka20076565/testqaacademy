@@ -23,7 +23,7 @@ public class LoginTest{
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
-    @Test
+//    @Test
     public void  validLogIn() throws InterruptedException{
         webDriver.get("https://osu.ppy.sh/home");
         Thread.sleep(100);

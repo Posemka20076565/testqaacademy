@@ -12,7 +12,7 @@ abstract public class ParentPageSwag {
     Logger logger = Logger.getLogger(getClass());
     ActionsWithOurElements actionsWithOurElements;
     Actions actions;
-    final String BASE_URL = "https://www.saucedemo.com/";
+    final String BASE_URL = "https://www.saucedemo.com";
     String expectedUrl;
 
     public ParentPageSwag(WebDriver webDriver, String partUrl) {
@@ -23,7 +23,7 @@ abstract public class ParentPageSwag {
         expectedUrl = BASE_URL + partUrl;
     }
 
-    public void checkCurrenUrl(){
+    public void checkCurrentUrl(){
         try {
             Assert.assertEquals("URL is not expected", expectedUrl, webDriver.getCurrentUrl());
         } catch (Exception e){

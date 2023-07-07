@@ -1,5 +1,6 @@
 package parentTest;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -43,7 +44,7 @@ public class ParentTest {
         cartPageSwag = new CartPageSwag(webDriver);
     }
 
-    //    @After
+    @After
     public void tearDown() {
         webDriver.quit();
     }

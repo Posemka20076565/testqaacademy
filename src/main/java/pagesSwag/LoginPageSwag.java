@@ -38,6 +38,7 @@ public class LoginPageSwag extends ParentPageSwag {
 
     public void loginWithCred(String login, String password){
         openLoginPage();
+        checkCurrentUrl();
         inputTextIntoLogin(login);
         inputTextIntoPassword(password);
         loginButton.click();
