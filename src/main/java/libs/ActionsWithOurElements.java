@@ -13,28 +13,45 @@ public class ActionsWithOurElements {
         this.webDriver = webDriver;
     }
 
-    public void enterTextIntoInput(WebElement element, String text){
-        try{
+    public void enterTextIntoInput(WebElement element, String text) {
+        try {
             element.click();
             element.clear();
             element.sendKeys(text);
             logger.info(text + " was inputted into input");
-        } catch (Exception e){
+        } catch (Exception e) {
             logger.error("Can not work with element");
             Assert.fail("Can not work with element");
         }
     }
 
-    public void clickOnElement(WebElement element1){
+    public void clickOnElement(WebElement element1) {
         element1.click();
     }
 
-    public boolean isElementPresent(WebElement element){
-        try{
+    public boolean isElementPresent(WebElement element) {
+        try {
             return element.isDisplayed();
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
+    }
 
+    public void setStatusToCheckBox(WebElement checkBox, String status) {
+        boolean isStatusCheck = "check".equals(status.toLowerCase());
+        boolean isStatusUncheck =  "uncheck".equals(status.toLowerCase());
+        if (isStatusCheck || isStatusUncheck){
+            if (checkBox.isSelected() && isStatusCheck){
+                logger.info("CheckBox is already checked");
+            } else if(checkBox.isSelected() && isStatusUncheck) {
+                clickOnElement(checkBox);
+            } else if(!checkBox.isSelected() && isStatusCheck){
+                clickOnElement(checkBox);
+            } else if (!checkBox.isSelected() && isStatusUncheck) {
+                logger.info("CheckBox is already unchecked");
+            }
+        }else {
+            Assert.fail("Status should be 'check' ot 'uncheck'");
+        }
     }
 }
