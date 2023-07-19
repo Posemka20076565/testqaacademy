@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.regex.Pattern;
+
 abstract public class ParentPageSwag {
     WebDriver webDriver;
     Logger logger = Logger.getLogger(getClass());
@@ -25,7 +27,9 @@ abstract public class ParentPageSwag {
 
     public void checkCurrentUrl(){
         try {
-            Assert.assertEquals("URL is not expected", expectedUrl, webDriver.getCurrentUrl());
+            logger.info(expectedUrl);
+            logger.info(webDriver.getCurrentUrl());
+            Assert.assertEquals("URL is not expected", Pattern.matches(expectedUrl, webDriver.getCurrentUrl()), true);
         } catch (Exception e){
             logger.error("Can not get URL" + e);
             Assert.fail("Can not get URL");
