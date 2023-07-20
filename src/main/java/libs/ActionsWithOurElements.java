@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.yandex.qatools.htmlelements.element.TypifiedElement;
 
 import java.time.Duration;
 
@@ -22,6 +23,18 @@ public class ActionsWithOurElements {
     }
 
     public void enterTextIntoInput(WebElement element, String text) {
+        try {
+            element.click();
+            element.clear();
+            element.sendKeys(text);
+            logger.info(text + " was inputted into input");
+        } catch (Exception e) {
+            logger.error("Can not work with element");
+            Assert.fail("Can not work with element");
+        }
+    }
+
+    public void enterTextIntoInput2(WebElement element, String text) {
         try {
             element.click();
             element.clear();
