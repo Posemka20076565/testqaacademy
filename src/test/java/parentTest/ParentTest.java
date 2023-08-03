@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import pagesSwag.CartPageSwag;
 import pagesSwag.ItemsPageSwag;
 import pagesSwag.LoginPageSwag;
@@ -28,11 +30,18 @@ public class ParentTest {
 
     @Before
     public void setUp() {
-        if (browser==null || "chrome".equals(browser.toLowerCase())) {
-            File file = new File("./src/drivers/chromedriver.exe");
+        if ("chrome".equals(browser.toLowerCase())) {
+            File file = new File("./src/drivers/chromedriver.bin");
             System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 
             webDriver = new ChromeDriver();
+        }else if (browser==null || "firefox".equals(browser.toLowerCase())){
+            File file = new File ("./src/drivers/geckodriver.bin");
+            System.setProperty ("webdriver.gecko.driver", file.getAbsolutePath());
+            FirefoxOptions profile = new FirefoxOptions();
+            profile.addPreference("browser.startup.page", 0);
+            profile.addPreference ("browser.startup.homepage_overdrive.mstone", "ignore");
+                    webDriver = new FirefoxDriver();
         }
 
 /*        ChromeOptions options = new ChromeOptions();
