@@ -10,26 +10,35 @@ import pagesSwag.CartPageSwag;
 import pagesSwag.ItemsPageSwag;
 import pagesSwag.LoginPageSwag;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 public class ParentTest {
-    protected WebDriver webDriver;
-    //    protected LoginPage loginPage;
-//    protected HomePage homePage;
-//    protected StorePage storePage;
-//    protected SupporterTagPage supporterTagPage;
-//    protected CartPage cartPage;
-//    protected BeatmapsPage beatmapsPage;
+    WebDriver webDriver;
+    String browser = System.getProperty("browser");
+/*    protected LoginPage loginPage;
+*   protected HomePage homePage;
+*    protected StorePage storePage;
+*    protected SupporterTagPage supporterTagPage;
+*    protected CartPage cartPage;
+    protected BeatmapsPage beatmapsPage;*/
     protected LoginPageSwag loginPageSwag;
     protected ItemsPageSwag itemsPageSwag;
     protected CartPageSwag cartPageSwag;
 
     @Before
     public void setUp() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        webDriver = new ChromeDriver(options);
+        if (browser==null || "chrome".equals(browser.toLowerCase())) {
+            File file = new File("./src/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 
+            webDriver = new ChromeDriver();
+        }
+
+/*        ChromeOptions options = new ChromeOptions();
+*        options.addArguments("--remote-allow-origins=*");
+*        webDriver = new ChromeDriver(options);
+*/
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 

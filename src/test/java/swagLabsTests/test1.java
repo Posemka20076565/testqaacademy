@@ -3,7 +3,7 @@ package swagLabsTests;
 import org.junit.Test;
 import parentTest.ParentTest;
 
-public class Test1 extends ParentTest {
+public class test1 extends ParentTest {
     String login = "standard_user";
     String password = "secret_sauce";
 
