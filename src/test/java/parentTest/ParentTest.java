@@ -30,26 +30,43 @@ public class ParentTest {
 
     @Before
     public void setUp() {
-        if ("chrome".equals(browser.toLowerCase())) {
-            File file = new File("./src/drivers/chromedriver.bin");
-            System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-
-            webDriver = new ChromeDriver();
-        }else if (browser==null || "firefox".equals(browser.toLowerCase())){
-            File file = new File ("./src/drivers/geckodriver.bin");
-            System.setProperty ("webdriver.gecko.driver", file.getAbsolutePath());
+//        if (browser == null || "chrome".equals(browser.toLowerCase())) {
+////            File file = new File("./src/drivers/chromedriver.bin");
+////            System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+////            webDriver = new ChromeDriver();
+//            ChromeOptions options = new ChromeOptions();
+//            options.addArguments("--remote-allow-origins=*");
+//            webDriver = new ChromeDriver(options);
+//        } else
+            if (browser == null || "firefox".equals(browser.toLowerCase())) {
+//            File file = new File("./src/drivers/geckodriver.bin");
+//            System.setProperty("webdriver.gecko.driver", file.getAbsolutePath());
             FirefoxOptions profile = new FirefoxOptions();
+//            profile.addArguments("--remote-allow-origins=*");
             profile.addPreference("browser.startup.page", 0);
-            profile.addPreference ("browser.startup.homepage_overdrive.mstone", "ignore");
-                    webDriver = new FirefoxDriver();
+            profile.addPreference("browser.startup.homepage_overdrive.mstone", "ignore");
+            webDriver = new FirefoxDriver();
         }
+//       if (browser==null || "firefox".equals(browser.toLowerCase())){
+//            File file = new File ("./src/drivers/geckodriver.bin");
+//            System.setProperty ("webdriver.gecko.driver", file.getAbsolutePath());
+//            FirefoxOptions profile = new FirefoxOptions();
+//            profile.addPreference("browser.startup.page", 0);
+//            profile.addPreference ("browser.startup.homepage_overdrive.mstone", "ignore");
+//                    webDriver = new FirefoxDriver();
+//        } else if ("chrome".equals(browser.toLowerCase())) {
+//            File file = new File("./src/drivers/chromedriver.bin");
+//            System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+//
+//            webDriver = new ChromeDriver();
+//        }
 
-/*        ChromeOptions options = new ChromeOptions();
-*        options.addArguments("--remote-allow-origins=*");
-*        webDriver = new ChromeDriver(options);
-*/
-        webDriver.manage().window().maximize();
-        webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+//      ChromeOptions options = new ChromeOptions();
+//      options.addArguments("--remote-allow-origins=*");
+//   webDriver = new ChromeDriver(options);
+//
+//        webDriver.manage().window().maximize();
+//        webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
 //        loginPage = new LoginPage(webDriver);
 //        homePage = new HomePage(webDriver);
