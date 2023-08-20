@@ -144,7 +144,6 @@ public class Mainclass {
         int[][] massivMassiv4 = new int[5][5];
         WorkWithMAssive workWithMAssive3 = new WorkWithMAssive();
         workWithMAssive.makeDiagonal2(massivMassiv4);
-
         kaza.exchangeCurrencyToGrn(100);
         kaza.exchangeCurrencyToGrn(400);
         System.out.println(kaza.exchangeCurrencyToGrn(1));
